@@ -18,12 +18,18 @@ function Office() {
   };
 
   const companyList = [
-    { companyName: "CTS", role: "Tech Lead" },
+    { companyName: "CTS", role: "Tech Lead",  },
     { companyName: "TCS", role: "Manager" },
     { companyName: "Infosys", role: "Developer" },
     { companyName: "Wipro", role: "Tester" },
     { companyName: "HCL", role: "Designer" },
   ];
+
+  const numberList = [
+  // 0 1 2 3  4 5  6  7
+    1, 2, 3, 4, 5, 6, 5, 
+  ]
+
 
   return (
     <>
@@ -37,9 +43,15 @@ function Office() {
 
        <ul>
         {
-          companyList.map((companyList) => { return <li> <Employee empDetails={companyList} /> </li>})
+          companyList.map((companyList, index) => { return <li key={index}> <Employee empDetails={companyList} /> </li>})
         }
        </ul>
+
+         <ul>
+           {
+            numberList.map((e, index) => <h1 key={index}>{e}</h1>)
+           }
+         </ul>
 
 
     </>
