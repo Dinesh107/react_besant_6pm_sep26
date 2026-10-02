@@ -5,7 +5,6 @@ function FavoriteColor() {
  
        const [color, setColor] = useState("blue"); // this line for changing the value of color
  
-
   return (
     <>
       <h1>My fav color is {color}</h1>;
