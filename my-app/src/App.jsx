@@ -1,4 +1,5 @@
 import FavoriteColor from "./components/favoriteColor.jsx";
+import MyForm from "./components/MyForm.jsx";
 import Patients from "./components/Patients.jsx";
 import Timer from "./components/Timer.jsx";
 import VendorList from "./components/VendorList.jsx";
@@ -10,7 +11,8 @@ function App() {
       {/* <FavoriteColor /> */}
       {/* <Patients/> */}
       {/* <VendorList/> */}
-      <Timer />
+      {/* <Timer /> */}
+      <MyForm />
     </>
   );
 }

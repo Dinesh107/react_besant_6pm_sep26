@@ -2,13 +2,31 @@ import { useEffect, useState } from "react"
 
 function Timer() {
 
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
-   useEffect(() => {
-    console.log("Screen refreshed");
-   }, [count]);
+//    useEffect(() => {
+//     console.log("Screen refreshed");
+//     checkCount();
+//    }, [count]);
 
-  
+   
+//     useEffect(() => {
+//     console.log("Screen refreshed");
+//      setCount(1);
+//    }, []);
+
+//   useEffect(() => {
+//     console.log("Screen refreshed");
+//       setTimeout(() => {
+//          setCount((pre) => { return pre + 1 });
+//       }, 2000)
+//    });
+
+     function checkCount() {
+      if(count > 10) {
+        setCount(1);
+      }
+   }
 
    function updateCount() {
       setCount((preState) => {return preState + 1});
