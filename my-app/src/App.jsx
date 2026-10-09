@@ -14,6 +14,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Students from "./components/Students";
 import OldStudents from "./components/OldStudents";
 import NewStudents from "./components/NewStudents";
+import ComponentA from "./components/ComponentA";
+import FetchData from "./components/FetchData";
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
       {/* <Timer /> */}
       {/* <MyForm /> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <ul>
           <li>
             <Link to="/">Home Link</Link>
@@ -66,7 +68,11 @@ function App() {
             <Route path="newtudents" element={<NewStudents />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+     {/* <ComponentA /> */}
+     <FetchData/>
+
     </>
   );
 }

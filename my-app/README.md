@@ -71,7 +71,31 @@ godadday
 
 
 
+useContext - react hook that allows us to share the value between maultiple  levels of components 
+without passing props through each level 
 
+
+
+
+PROVIDER COMPONENT 
+1 import {createConstext} from 'react'
+export const MyContext = createContext();
+
+<MyContetext.provider value={value}>
+   <Child/>
+</MyContext.provider>
+
+
+
+
+CONSUMER COMPONENT 
+
+1 import {useContext} from 'react';
+import {MyContext} from '.ComponentA';
+
+const value = useContext(MyContext);
+
+  
 
 
 
